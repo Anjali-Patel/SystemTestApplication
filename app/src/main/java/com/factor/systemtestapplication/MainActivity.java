@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+        VideoModel videoModel= new VideoModel();
+        videoModel.setUrl("https://www.youtube.com/watch?v=RR7VlDG_prA");
+        new VideoAdfapter();
         video_url_image=findViewById(R.id.video_url_image);
         video_url_image1=findViewById(R.id.video_url_image1);
         video_url_image2=findViewById(R.id.video_url_image2);
